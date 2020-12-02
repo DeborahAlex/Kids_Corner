@@ -100,7 +100,7 @@ export default function Blog() {
             ))}
           </Grid>
           <Grid container spacing={5} className={classes.mainGrid}>
-          <Main title="Client Display Wall" />
+          <Main title="The Display Wall" />
             <Sidebar
               title={sidebar.title}
               description={sidebar.description}
