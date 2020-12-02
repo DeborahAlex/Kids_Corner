@@ -1,0 +1,47 @@
+
+.app{
+  padding-left: 250px;
+  padding-top: 50px;
+ 
+  padding-bottom: 50px;
+  min-height: 250vh;
+  background-color: rgb(236, 177, 212);
+ 
+ justify-content:space-around;
+ align-content: center;
+}
+
+.rhyme
+{
+  margin-left:250px;
+  height: 700px;
+  width: 300px;
+  background: beige;
+  column-gap: 100px;
+  margin-bottom: 50px;
+  border-radius: 30px;
+  display:flex;
+  flex-direction: column;
+  
+  align-items: center;
+}
+
+.heading{
+  font: outline;
+  color: rgb(36, 12, 12);
+  font-size: 110px;
+  
+}
+.poems{
+  height: 300px;
+  width: 800px;
+  background: rgb(134, 4, 84);
+  color: rgb(243, 222, 222);
+  column-gap: 100px;
+  margin-bottom: 50px;
+  border-radius: 30px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}

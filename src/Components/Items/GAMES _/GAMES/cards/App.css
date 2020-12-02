@@ -1,0 +1,68 @@
+
+.app{
+  padding-left: 250px;
+  padding-top: 50px;
+ 
+  padding-bottom: 50px;
+  min-height: 100vh;
+  background-color: rgb(241, 241, 113);
+ 
+ justify-content:space-around;
+ align-content: center;
+}
+
+.gn
+{
+  margin-left:250px;
+  height: 140px;
+  width: 300px;
+  background:rgb(5, 109, 5);
+  color: beige;
+  column-gap: 100px;
+  margin-bottom: 50px;
+  border-radius: 30px;
+  display:flex;
+  flex-direction: column;
+  
+  align-items: center;
+}
+.howto{
+  height: 280px;
+  width: 700px;
+  margin-left: 50px;
+  padding: 10px;
+  background:  rgb(102, 102, 32);
+  color: beige;
+  column-gap: 100px;
+  margin-bottom: 50px;
+  border-radius: 30px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.heading{
+  font: outline;
+  color: rgb(56, 52, 52);
+  font-size: 110px;
+  
+}
+.game{
+  height: 300px;
+  width: 800px;
+  background:  rgb(70, 70, 10);
+  color: antiquewhite;
+  column-gap: 100px;
+  margin-bottom: 50px;
+  border-radius: 30px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.h
+{
+  padding-right: 200px;
+  color: rgb(29, 28, 27);
+}

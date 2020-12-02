@@ -1,0 +1,51 @@
+
+.app{
+  padding-left: 250px;
+  padding-top: 50px;
+ 
+  padding-bottom: 50px;
+  min-height: 250vh;
+  background-color: lightblue;
+ 
+ justify-content:space-around;
+ align-content: center;
+}
+
+.str
+{
+  
+  height: 960px;
+  width: 800px;
+  background: rgb(91, 159, 182);
+  column-gap: 100px;
+  margin-bottom: 50px;
+  border-radius: 30px;
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.heading{
+  font: outline;
+  color:rgb(46, 45, 45);
+  font-size: 110px;
+  
+}
+.story{
+  height: 300px;
+  width: 800px;
+  background: rgb(18, 12, 56);
+  color: rgb(243, 222, 222);
+  column-gap: 100px;
+  margin-bottom: 50px;
+  border-radius: 30px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.h
+{
+  padding-right: 200px;
+}
