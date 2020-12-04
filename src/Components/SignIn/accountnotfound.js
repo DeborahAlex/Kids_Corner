@@ -1,32 +1,3 @@
-/*import React from 'react';
-export default function SignUpSuccess() {
-    //const classes = useStyles();
-  
-    return (
-        
-    <div class="container" > 
-        <div class="row"> 
-        <div class="col-md-3"> 
-        </div> 
-                  
-        <div class="col-md-6 main"> 
-                      
-            <h1> Signup Successful</h1> 
-                      
-        </div> 
-                  
-                  
-        <div class="col-md-3"> 
-        </div> 
-                  
-        </div> 
-    </div> 
-
-    )
-   
-}
-*/
-
 import React from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
@@ -105,7 +76,7 @@ export default function SignInSide() {
             Sign in
           </Typography>
           <Typography component="h3" variant="subtitle">
-            Sign up successful
+           User doesn't exist
           </Typography>
           <form className={classes.form} method="post" action="/sign_in">
             <TextField

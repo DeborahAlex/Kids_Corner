@@ -6,6 +6,9 @@ import * as serviceWorker from './serviceWorker';
 import Home from './Components/HomePage/home_page';
 import SignUp from './Components/SignUp/signupside';
 import SignIn from './Components/SignIn/signin'
+import WrongPassword from './Components/SignIn/wrongpassword'
+import AccountNotFound from './Components/SignIn/accountnotfound'
+import UserExists from './Components/SignUp/User_exists'
 import Crafts from './Components/ItemList/Crafts'
 import Stories from './Components/ItemList/Stories'
 import Games from './Components/ItemList/Games'
@@ -48,6 +51,9 @@ ReactDOM.render(
     <Route path="/" exact component={Home} />
     <Route path="/signup" exact component={SignUp}/>
     <Route path="/signin" exact component={SignIn}/>
+    <Route path="/userexists" exact component={UserExists}/>
+    <Route path="/wrongpassword" exact component={WrongPassword}/>
+    <Route path="/usernotfound" exact component={AccountNotFound}/>
     <Route path="/crafts" exact component={Crafts}/>
     <Route path="/stories" exact component={Stories}/>
     <Route path="/games" exact component={Games}/>

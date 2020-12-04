@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
@@ -12,8 +12,8 @@ import FeaturedPost from './FeaturedPost';
 import Main from './Main';
 import Sidebar from './Sidebar';
 import Footer from '../Footer/Footer';
-import img10 from '../../Assets/crafts/pic10.jpeg';
-import img9 from '../../Assets/experiment/pic9.jpeg'
+
+var React = require('react');
 
 const useStyles = makeStyles((theme) => ({
   mainGrid: {

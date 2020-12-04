@@ -75,6 +75,9 @@ export default function SignInSide() {
         <Typography component="h1" variant="h5">
           Sign up
         </Typography>
+        <Typography component="h3" variant="subtitle" color="red">
+         User Account Exists
+        </Typography>
         <form className={classes.form} method="post" action="/sign_up">
           <Grid container spacing={2}>
             <Grid item xs={12} sm={6}>
