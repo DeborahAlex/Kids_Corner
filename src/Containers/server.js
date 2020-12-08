@@ -3,6 +3,22 @@ var express=require("express");
 var bodyParser=require("body-parser"); 
 const bcrypt = require("bcryptjs");
 const mongoose = require('mongoose'); 
+var fileUpload = require("express-fileupload");
+var multer  =   require('multer');  
+var app =   express();  
+var storage =   multer.diskStorage({  
+  destination: function (req, file, callback) {  
+    callback(null, './uploads');  
+  },  
+  filename: function (req, file, callback) {  
+    callback(null, file.originalname);  
+  }  
+});  
+var upload = multer({ storage : storage}).single('myfile');  
+  
+
+var app = express();
+app.use(fileUpload()); //req.files.fname
 mongoose.connect('mongodb://localhost:27017/KidsCorner'); 
 console.log("Just after mongoose");
 var db=mongoose.connection; 
@@ -11,7 +27,7 @@ db.once('open', function(callback){
 	console.log("connection succeeded"); 
 }) 
 
-var app=express() 
+//var app=express() 
 const router1=express.Router();
 const router2=express.Router()
 app.use(bodyParser.json()); 
@@ -76,6 +92,32 @@ app.post('/sign_up', function(req,res){
 		
 	
 }) 
+/*
+app.post("/upload",function(req,res){
+	//req.files
+	if(!req.files){
+		return res.status(400).send("No files uploaded")
+	}
+	else{
+		var ipfile = req.files.ipfile;
+		//ipfile.name, ipfile.type, ipfile.size
+		ipfile.mv("./files/"+ipfile.name,function(err){
+			if(err){
+				return res.status(500).send("Could not save the uploaded file")
+			}
+			res.send("File Uploaded successfully")
+		})
+	}
+})
+*/
+app.post('/upload',function(req,res){  
+    upload(req,res,function(err) {  
+        if(err) {  
+            return res.end("Error uploading file.");  
+        }  
+        res.end("File is uploaded successfully!");  
+    });  
+});
 app.post('/sign_in',function(req,res)
 { 
 	console.log("Sign in called")
@@ -101,7 +143,7 @@ app.post('/sign_in',function(req,res)
 		if (bcrypt.compareSync(pass,docs.password))
 		{
 			//res.send("Sign in Successful");
-			return res.redirect("http://localhost:3000/")
+			return res.redirect("http://localhost:3000/imageupload")
 		}
 		else{
 			return res.redirect('http://localhost:3000/wrongpassword');

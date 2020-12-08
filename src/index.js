@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {Provider} from 'react-redux'
 import './index.css';
 import App from './App';
+import Gallery from './imgpart/src/components/Gallery'
 import * as serviceWorker from './serviceWorker';
 import Home from './Components/HomePage/home_page';
 import SignUp from './Components/SignUp/signupside';
@@ -9,6 +11,7 @@ import SignIn from './Components/SignIn/signin'
 import WrongPassword from './Components/SignIn/wrongpassword'
 import AccountNotFound from './Components/SignIn/accountnotfound'
 import UserExists from './Components/SignUp/User_exists'
+import ImageUpload from './imgpart/src/components/HomePage'
 import Crafts from './Components/ItemList/Crafts'
 import Stories from './Components/ItemList/Stories'
 import Games from './Components/ItemList/Games'
@@ -44,6 +47,7 @@ import Peterpan from './Components/Items/STORIES/STORIES/peterpan/App'
 import Robinhood from './Components/Items/STORIES/STORIES/robinhood/App'
 import {BrowserRouter as Router, Route} from "react-router-dom";
 import SignUpSuccess from './Components/SignUp/sign_up_success';
+import store from './imgpart/src/store/store'
 //import { SdCardSharp } from '@material./Components/ItemList/-ui/icons';
 ReactDOM.render(
   <React.StrictMode>
@@ -51,6 +55,10 @@ ReactDOM.render(
     <Route path="/" exact component={Home} />
     <Route path="/signup" exact component={SignUp}/>
     <Route path="/signin" exact component={SignIn}/>
+    <Route path="/imageupload" exact component={ImageUpload}/>
+    <Provider store={store}>
+    <Route path="/gallery" exact component={Gallery}/>
+    </Provider>
     <Route path="/userexists" exact component={UserExists}/>
     <Route path="/wrongpassword" exact component={WrongPassword}/>
     <Route path="/usernotfound" exact component={AccountNotFound}/>

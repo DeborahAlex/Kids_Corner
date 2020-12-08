@@ -64,19 +64,7 @@ const sidebar = {
   title: 'About',
   description:
     'In the busy world that we live in, time is very precious. It often takes a lot of time to find different age appropriate activities to keep children entertained.  We hope to provide a platform with a lot of options where you can come to get ideas and inspiration to keep your little ones entertained. ',
-  /*archives: [
-   // { title: 'March 2020', url: '#' },
-    //{ title: 'February 2020', url: '#' },
-    //{ title: 'January 2020', url: '#' },
-    //{ title: 'November 1999', url: '#' },
-    //{ title: 'October 1999', url: '#' },
-    //{ title: 'September 1999', url: '#' },
-    //{ title: 'August 1999', url: '#' },
-    //{ title: 'July 1999', url: '#' },
-    //{ title: 'June 1999', url: '#' },
-    //{ title: 'May 1999', url: '#' },
-    //{ title: 'April 1999', url: '#' },
-  ],*/
+  
   social: [
     { name: 'Instagram', icon: InstagramIcon },
     { name: 'Twitter', icon: TwitterIcon },
