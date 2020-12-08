@@ -15,18 +15,7 @@ import Container from '@material-ui/core/Container';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header'
 
-function Copyright() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
+ 
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -62,7 +51,7 @@ export default function SignUp() {
 
   return (
     
-   // <Container component="main" maxWidth="xs">
+  
    <Container component="main">
      <Header title="Kids' Corner" sections={sections} />
      <Container component="main" maxWidth="xs">

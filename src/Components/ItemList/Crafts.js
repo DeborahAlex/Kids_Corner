@@ -15,7 +15,6 @@ import img10 from '../../Assets/crafts/pic10.jpeg';
 import img11 from '../../Assets/crafts/pic11.jpeg';
 import img12 from '../../Assets/crafts/pic12.jpeg';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
@@ -156,6 +155,3 @@ const sections = [
 
     }
 
-
-
-//export default Crafts;

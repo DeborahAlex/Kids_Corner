@@ -76,7 +76,7 @@ export default function SignInSide() {
           <Typography component="h1" variant="h5">
            Image Upload
           </Typography>
-          <form className={classes.form} method="post" action="http://localhost:3001/upload">
+          <form className={classes.form} method="post" action="http://localhost:3001/upload" enctype="multipart/form-data">
             <TextField
               variant="outlined"
               margin="normal"
